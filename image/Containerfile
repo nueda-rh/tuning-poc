@@ -4,3 +4,6 @@ COPY requirements.txt ./
 
 RUN echo "Installing softwares and packages" && \
 rm -f ./requirements.txt
+
+RUN chmod -R g+w /opt/app-root/lib/python3.9/site-packages && \
+fix-permissions /opt/app-root -P
