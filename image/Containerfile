@@ -1,4 +1,4 @@
-FROM quay.io/modh/odh-generic-data-science-notebook
+FROM quay.io/modh/odh-generic-data-science-notebook@sha256:e2cab24ebe935d87f7596418772f5a97ce6a2e747ba0c1fd4cec08a728e99403
 
 COPY requirements.txt ./
 
