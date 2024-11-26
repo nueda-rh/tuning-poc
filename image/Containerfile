@@ -3,7 +3,7 @@ FROM quay.io/modh/odh-generic-data-science-notebook@sha256:e2cab24ebe935d87f7596
 COPY requirements.txt ./
 
 RUN echo "Installing softwares and packages" && \
-rm -f ./requirements.txt
+    rm -f ./requirements.txt
 
 RUN chmod -R g+w /opt/app-root/lib/python3.9/site-packages && \
-fix-permissions /opt/app-root -P
+    fix-permissions /opt/app-root -P
