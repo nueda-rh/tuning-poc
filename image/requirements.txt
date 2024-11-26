@@ -1,0 +1,2 @@
+compressed-tensors==0.7.1
+sparseml[transformers]
