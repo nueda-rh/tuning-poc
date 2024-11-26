@@ -3,6 +3,4 @@ FROM quay.io/modh/odh-generic-data-science-notebook@sha256:e2cab24ebe935d87f7596
 COPY requirements.txt ./
 
 RUN echo "Installing softwares and packages" && \
-pip install micropipenv && \
-micropipenv install && \
 rm -f ./requirements.txt
